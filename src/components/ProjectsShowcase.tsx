@@ -6,38 +6,21 @@ const projects = [
     title: "Real Time Voice Modulation",
     description:
       "A web application that allows users to modify their voice in real-time during video calls using AI and WebRTC.",
-    tech: ["AI", "Node.js", "MongoDB", "React"],
-    link: "https://gla-fit.onrender.com/",
+    tech: ["HTML","CSS", "JAVASCRIPT","Flask"],
+    link: "https://rvc-l44n.onrender.com/",
   },
   {
-    title: "GLA-Zoom",
+    title: "AI-Powered Autonomous Virtual Research Assistant",
     description:
-      "An AI-powered virtual meeting platform that recognizes emotions in real-time using speech and image analysis during meetings.",
+      "An AI-driven virtual assistant that helps researchers with literature review and data analysis.",
     tech: [
       "AI",
-      "WebRTC",
-      "Computer Vision",
+      "FastAPI",
+      "Python",
       "NLP",
-      "Express.js",
       "React",
-      "MongoDB",
+      "SQLite",
     ],
-    link: "https://gla-zoom.vercel.app/",
-  },
-
-  {
-    title: "Discussion Forum Web App",
-    description:
-      "A collaborative platform for discussions with a modern UI and real-time interactions.",
-    tech: ["React", "Node.js", "MongoDB", "ShadCN"],
-    link: "https://github.com/yourusername/Discussion-Forum",
-  },
-  {
-    title: "Healthcare Platform",
-    description:
-      "Secure healthcare platform with role-based access for patients and providers.",
-    tech: ["JWT", "Node.js", "React", "MongoDB"],
-    link: "https://github.com/yourusername/Healthcare-Platform",
   },
 ];
 
@@ -48,7 +31,7 @@ const ProjectsShowcase = () => {
         <h2 className="text-4xl font-bold text-center mb-10 text-gray-900 dark:text-white">
           Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div id="projects" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
